@@ -20,6 +20,7 @@
     "@babel/core": "^7.0.0-beta.42",
     "@babel/preset-env": "^7.0.0-beta.42",
     "@babel/preset-react": "^7.0.0-beta.42",
+    "async": "^2.6.0",
     "autoprefixer": "^8.2.0",
     "aws-sdk": "^2.228.1",
     "babel-loader": "^8.0.0-beta.2",
