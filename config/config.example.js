@@ -8,6 +8,9 @@ module.exports = {
     endpoint: 'http://localhost:8000'
   },
   aws_remote_config: {
+    accessKeyId: 'YOUR_KEY',
+    secretAccessKey: 'YOUR_SECRET_KEY',
+    region: 'us-east-1',
   }
 };
 

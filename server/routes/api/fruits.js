@@ -6,8 +6,10 @@ module.exports = (app) => {
   // Gets all fruits
   app.get('/api/fruits', (req, res, next) => {
     if (isDev) {
+      console.log('isDev');
       AWS.config.update(config.aws_local_config);
     } else {
+      console.log('isProd');
       AWS.config.update(config.aws_remote_config);
     }
 
