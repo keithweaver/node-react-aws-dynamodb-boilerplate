@@ -2,7 +2,10 @@
 // More info for setting up credentials for AWS DynamoDB.
 // https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SettingUp.DynamoWebService.html
 module.exports = {
-  aws_table_name: 'YOUR_TABLE_NAME',
+  local_storage_key: 'node-react-aws-dynamodb',
+  aws_user_table_name: 'usersTab',
+  aws_user_session_table_name: 'userSessionsTab',
+  aws_table_name: 'fruitsTab',
   aws_local_config: {
     region: 'local',
     endpoint: 'http://localhost:8000'
@@ -11,7 +14,9 @@ module.exports = {
     accessKeyId: 'YOUR_KEY',
     secretAccessKey: 'YOUR_SECRET_KEY',
     region: 'us-east-1',
-  }
+  },
+  github_client_id: '',
+  github_client_secret: ''
 };
 
 // A little more about it. After creating a table.

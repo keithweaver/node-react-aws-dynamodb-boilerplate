@@ -7,6 +7,17 @@ This is a boilerplate project using the following technologies:
 - [Webpack](https://webpack.github.io/) for compilation
 
 
+## Local Dev
+
+```
+java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
+```
+
+```
+aws dynamodb create-table --cli-input-json file:///Users/weaver/Desktop/node-react-aws-dynamodb-boilerplate/config/tables/create-users-table.json --endpoint-url http://localhost:8000
+aws dynamodb create-table --cli-input-json file:///Users/weaver/Desktop/node-react-aws-dynamodb-boilerplate/config/tables/create-user-sessions-table.json --endpoint-url http://localhost:8000
+```
+
 ## Requirements
 
 - [Node.js](https://nodejs.org/en/) 6+

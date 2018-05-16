@@ -1,0 +1,19 @@
+{
+  "TableName": "userSessionsTab",
+  "KeySchema": [
+    {
+      "AttributeName": "sessionToken",
+      "KeyType": "HASH"
+    }
+  ],
+  "AttributeDefinitions": [
+    {
+      "AttributeName": "sessionToken",
+      "AttributeType": "S"
+    }
+  ],
+  "ProvisionedThroughput": {
+    "ReadCapacityUnits": 5,
+    "WriteCapacityUnits": 5
+  }
+}

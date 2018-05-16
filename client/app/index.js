@@ -19,6 +19,7 @@ import NotFound from './containers/App/NotFound';
 import Home from './containers/Home/Home';
 import HelloWorld from './containers/HelloWorld/HelloWorld';
 import Counters from './containers/Counters/Counters';
+import SignInCallbackPage from './containers/SignIn/SignInCallbackPage';
 
 // Styles
 import './styles/styles.scss';
@@ -33,6 +34,7 @@ render((
           <Route exact path="/" component={Home} />
           <Route path="/counters" component={Counters} />
           <Route path="/helloworld" component={HelloWorld} />
+          <Route path="/signin/callback" component={SignInCallbackPage} />
           <Route component={NotFound}/>
         </Switch>
       </App>
