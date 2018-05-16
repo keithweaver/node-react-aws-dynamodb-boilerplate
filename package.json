@@ -1,11 +1,11 @@
 {
-  "name": "MERN-boilerplate",
+  "name": "node-react-aws-dynamodb-boilerplate",
   "version": "1.0.0",
-  "description": "MERN stack project boilerplate",
-  "author": "Eugene Cheung",
+  "description": "Node.js React.js AWS DynamoDB project boilerplate",
+  "author": "Keith Weaver",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arkon/MERN-boilerplate.git"
+    "url": "git+https://github.com/keithweaver/node-react-aws-dynamodb-boilerplate.git"
   },
   "license": "MIT",
   "private": true,
