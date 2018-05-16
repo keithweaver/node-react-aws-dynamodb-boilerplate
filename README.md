@@ -1,44 +1,49 @@
-# MERN-boilerplate
+# Node.js + React.js + AWS DynamoDB + Github OAuth
 
-This is a boilerplate project using the following technologies:
-- [React](https://facebook.github.io/react/) and [React Router](https://reacttraining.com/react-router/) for the frontend
-- [Express](http://expressjs.com/) and [Mongoose](http://mongoosejs.com/) for the backend
-- [Sass](http://sass-lang.com/) for styles (using the SCSS syntax)
-- [Webpack](https://webpack.github.io/) for compilation
+This is boilerplate code for a local or remote AWS DynamoDB for a backend using Node.js with a React.js frontend and integrated Github OAuth to handle log in.
 
 
-## Local Dev
+## Setup
+
+For either production or local, rename `config.example.js` to `config.js` in the `config` folder. You will need to add values (Github Secret & AWS IAM credentials).
+
+
+### Local
+
+You will have to download the [local dev JAR](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html) to execute DynamoDB on your machine. You will also need Node.js. In your first terminal window run:
 
 ```
 java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb
 ```
 
+In your second terminal window:
+
 ```
+npm install
+
 aws dynamodb create-table --cli-input-json file:///Users/weaver/Desktop/node-react-aws-dynamodb-boilerplate/config/tables/create-users-table.json --endpoint-url http://localhost:8000
 aws dynamodb create-table --cli-input-json file:///Users/weaver/Desktop/node-react-aws-dynamodb-boilerplate/config/tables/create-user-sessions-table.json --endpoint-url http://localhost:8000
 ```
 
-## Requirements
+### Production
 
-- [Node.js](https://nodejs.org/en/) 6+
+Assuming, you have a nginx server setup. You will need to run:
 
-```shell
+```
 npm install
 ```
 
 
 ## Running
 
-Make sure to add a `config.js` file in the `config` folder. See the example there for more details.
-
-Production mode:
-
-```shell
-npm start
-```
-
-Development (Webpack dev server) mode:
+### Local
 
 ```shell
 npm run start:dev
+```
+
+### Production
+
+```shell
+npm start
 ```
