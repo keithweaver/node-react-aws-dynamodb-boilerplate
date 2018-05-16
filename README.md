@@ -21,8 +21,8 @@ In your second terminal window:
 ```
 npm install
 
-aws dynamodb create-table --cli-input-json file:///Users/weaver/Desktop/node-react-aws-dynamodb-boilerplate/config/tables/create-users-table.json --endpoint-url http://localhost:8000
-aws dynamodb create-table --cli-input-json file:///Users/weaver/Desktop/node-react-aws-dynamodb-boilerplate/config/tables/create-user-sessions-table.json --endpoint-url http://localhost:8000
+aws dynamodb create-table --cli-input-json file://__YOUR__PATH__/node-react-aws-dynamodb-boilerplate/config/tables/create-users-table.json --endpoint-url http://localhost:8000
+aws dynamodb create-table --cli-input-json file://__YOUR__PATH__/node-react-aws-dynamodb-boilerplate/config/tables/create-user-sessions-table.json --endpoint-url http://localhost:8000
 ```
 
 ### Production
