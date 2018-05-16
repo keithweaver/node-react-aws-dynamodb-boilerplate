@@ -16,7 +16,8 @@ module.exports = {
     region: 'us-east-1',
   },
   github_client_id: '',
-  github_client_secret: ''
+  github_client_secret: '',
+  github_scope: 'user'
 };
 
 // A little more about it. After creating a table.
