@@ -21,7 +21,7 @@ class Home extends Component {
 
   componentDidMount() {
     const localObj = getFromStorage(STORAGE_KEY);
-    if (localObj.token) {
+    if (localObj && localObj.token) {
       this.setState({
         sessionToken: localObj.token,
       });
